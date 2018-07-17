@@ -1,0 +1,11 @@
+//**
+/* https://sass-cheatsheet.brunoscopelliti.com/
+*/
+
+$pictureSize: 40px;
+
+img {
+    width: $pictureSize;
+    height: $pictureSize;
+    border-radius: $pictureSize / 2;
+}

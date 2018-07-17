@@ -1,0 +1,11 @@
+<h1>Carte des utilisateurs</h1>
+
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="1">
+  <agm-marker
+    *ngFor="let marker of markers"
+    [latitude]="marker.lat"
+    [longitude]="marker.lng"
+  >
+  <agm-info-window>{{ marker.name }}</agm-info-window>
+</agm-marker>
+</agm-map>

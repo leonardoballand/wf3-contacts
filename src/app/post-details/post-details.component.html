@@ -1,0 +1,20 @@
+<!-- 
+  - Vous avez maintenant accès aux informations grâce à {{ post }}
+  - Créer un <header>
+  - Afficher le titre dans un <h1> dans le header
+  - Afficher l'id de l'utilisateur dans un <p> dans le header (clé userId)
+  - Créer une <section>
+  - Afficher le contenu de l'article dans la section
+-->
+
+<article id="content" class="post post-{{post.id}}">
+  <header>
+    <h1 class="post-title">{{post.title}}</h1>
+    <p>
+      <a routerLink="/details/{{post.user.id}}">{{post.user.name}}</a>
+    </p>
+  </header>
+  <section>
+    {{post.body}}
+  </section>
+</article>
